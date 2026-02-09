@@ -1,5 +1,6 @@
 # Introduction:
 A comparative analysis of asset pricing and stock return forecasting by evaluating the performance of traditional finance models against modern machine learning architectures and assess their results.
+The repository includes code files for data acquiring, data preparation, model constructing and performance results.
 # Models:
 1. Traditional Models: CAPM and Fama-French Three Factors.
 2. Machine Learning Models: Random Forest and Neural Network.
@@ -13,6 +14,6 @@ A comparative analysis of asset pricing and stock return forecasting by evaluati
 3. Risk-free rate: use VN 10-Year Bond Yield historical data.
 # Summary of results:
 More complex models do not necessarily yield better point-in-time predictions. In fact, the Neural Network underperformed significantly compared to simpler benchmarks.
-- Random Forest: achieved a cumulative return of ~20% and the highest Sharpe Ratio (1.7). Its success comes from its ability to rank sectors correctly, even if the specific return numbers are slightly off.
-- Neural Network: despite having the worst predictive accuracy, it managed a positive return of 8% and a Sharpe Ratio of 0.6. However, it was highly volatile with significant drawdowns.
+- Random Forest: achieved a cumulative return of ~20% and the highest Sharpe Ratio (1.7). The success comes from its ability to rank sectors correctly, even if the specific return numbers are slightly off.
+- Neural Network: despite having the worst predictive accuracy, it managed a positive return of 8% and a Sharpe Ratio of 0.6. However, the model's performance was highly volatile with significant drawdowns.
 - CAPM & FF3: both failed as investment tools, generating cumulative losses of 25–30%. They systematically misranked sectors, leading to poor long-short decisions. Thus, these models are better to be used as foundational frameworks for valuing assets, calculating expected returns, and managing portfolio risk.
